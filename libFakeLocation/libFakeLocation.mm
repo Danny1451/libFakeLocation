@@ -2,7 +2,7 @@
 //  libFakeLocation.mm
 //  libFakeLocation
 //
-//  Created by 刘旦 on 16/7/22.
+//  Created by danny on 16/7/22.
 //  Copyright (c) 2016年 __MyCompanyName__. All rights reserved.
 //
 
@@ -26,8 +26,10 @@
 
 @implementation CLLocation(Swizzle)
 
-static float x = -1;
-static float y = -1;
+
+//这边设置默认的签到地址
+static float x = 31.991912;
+static float y = 118.744564; 
 
 + (void) load {
     Method m1 = class_getInstanceMethod(self, @selector(coordinate));
@@ -48,9 +50,6 @@ static float y = -1;
     
     CLLocationCoordinate2D pos = [self coordinate_];
     
-
-    x = 31.991912;
-    y = 118.744564;
     if ([[NSUserDefaults standardUserDefaults] valueForKey:@"_fake_x"]) {
         x = [[[NSUserDefaults standardUserDefaults] valueForKey:@"_fake_x"] floatValue];
     };
