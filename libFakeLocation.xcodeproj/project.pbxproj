@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1E896CD1D41F0CF00455B4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E896CC1D41F0CF00455B4A /* Foundation.framework */; };
+		C1E896D71D41F0D000455B4A /* libFakeLocation.mm in Sources */ = {isa = PBXBuildFile; fileRef = C1E896D61D41F0D000455B4A /* libFakeLocation.mm */; };
+		C1E896E21D42110900455B4A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E896E11D42110900455B4A /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C1E896C91D41F0CF00455B4A /* libFakeLocation.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libFakeLocation.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1E896CC1D41F0CF00455B4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C1E896D11D41F0D000455B4A /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		C1E896D21D41F0D000455B4A /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		C1E896D41D41F0D000455B4A /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		C1E896D51D41F0D000455B4A /* libFakeLocation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libFakeLocation-Prefix.pch"; sourceTree = "<group>"; };
+		C1E896D61D41F0D000455B4A /* libFakeLocation.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = libFakeLocation.mm; sourceTree = "<group>"; };
+		C1E896DB1D41F0D000455B4A /* libFakeLocation.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = libFakeLocation.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/libFakeLocation.plist; sourceTree = "<group>"; };
+		C1E896E11D42110900455B4A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1E896C51D41F0CF00455B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E896E21D42110900455B4A /* CoreLocation.framework in Frameworks */,
+				C1E896CD1D41F0CF00455B4A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1E896BF1D41F0CF00455B4A = {
+			isa = PBXGroup;
+			children = (
+				C1E896CE1D41F0D000455B4A /* libFakeLocation */,
+				C1E896CB1D41F0CF00455B4A /* Frameworks */,
+				C1E896CA1D41F0CF00455B4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1E896CA1D41F0CF00455B4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1E896C91D41F0CF00455B4A /* libFakeLocation.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1E896CB1D41F0CF00455B4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1E896E11D42110900455B4A /* CoreLocation.framework */,
+				C1E896CC1D41F0CF00455B4A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1E896CE1D41F0D000455B4A /* libFakeLocation */ = {
+			isa = PBXGroup;
+			children = (
+				C1E896D61D41F0D000455B4A /* libFakeLocation.mm */,
+				C1E896CF1D41F0D000455B4A /* Package */,
+				C1E896D31D41F0D000455B4A /* Supporting Files */,
+			);
+			path = libFakeLocation;
+			sourceTree = "<group>";
+		};
+		C1E896CF1D41F0D000455B4A /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				C1E896D01D41F0D000455B4A /* DEBIAN */,
+				C1E896D81D41F0D000455B4A /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		C1E896D01D41F0D000455B4A /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				C1E896D11D41F0D000455B4A /* control.txt */,
+				C1E896D21D41F0D000455B4A /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		C1E896D31D41F0D000455B4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1E896D41D41F0D000455B4A /* PackageVersion.plist */,
+				C1E896D51D41F0D000455B4A /* libFakeLocation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1E896D81D41F0D000455B4A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C1E896D91D41F0D000455B4A /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		C1E896D91D41F0D000455B4A /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				C1E896DA1D41F0D000455B4A /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		C1E896DA1D41F0D000455B4A /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				C1E896DB1D41F0D000455B4A /* libFakeLocation.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C1E896C61D41F0CF00455B4A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C1E896C81D41F0CF00455B4A /* libFakeLocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1E896DE1D41F0D000455B4A /* Build configuration list for PBXNativeTarget "libFakeLocation" */;
+			buildPhases = (
+				C1E896C41D41F0CF00455B4A /* Sources */,
+				C1E896C51D41F0CF00455B4A /* Frameworks */,
+				C1E896C61D41F0CF00455B4A /* Headers */,
+				C1E896C71D41F0CF00455B4A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libFakeLocation;
+			productName = libFakeLocation;
+			productReference = C1E896C91D41F0CF00455B4A /* libFakeLocation.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1E896C01D41F0CF00455B4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					C1E896C81D41F0CF00455B4A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C1E896C31D41F0CF00455B4A /* Build configuration list for PBXProject "libFakeLocation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C1E896BF1D41F0CF00455B4A;
+			productRefGroup = C1E896CA1D41F0CF00455B4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1E896C81D41F0CF00455B4A /* libFakeLocation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C1E896C71D41F0CF00455B4A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1E896C41D41F0CF00455B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E896D71D41F0D000455B4A /* libFakeLocation.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C1E896DC1D41F0D000455B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		C1E896DD1D41F0D000455B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		C1E896DF1D41F0D000455B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libFakeLocation/libFakeLocation-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		C1E896E01D41F0D000455B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libFakeLocation/libFakeLocation-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1E896C31D41F0CF00455B4A /* Build configuration list for PBXProject "libFakeLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1E896DC1D41F0D000455B4A /* Debug */,
+				C1E896DD1D41F0D000455B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1E896DE1D41F0D000455B4A /* Build configuration list for PBXNativeTarget "libFakeLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1E896DF1D41F0D000455B4A /* Debug */,
+				C1E896E01D41F0D000455B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1E896C01D41F0CF00455B4A /* Project object */;
+}
